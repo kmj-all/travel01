@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: 'Pretendard-Bold';
-    src: url('../font/Pretendard/Pretendard-Bold.eot');
-    src: url('../font/Pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/pretendard/Pretendard-Bold.woff2') format('woff2'),
-        url('../font/pretendard/Pretendard-Bold.woff') format('woff');
+    src: url('../css/font/Pretendard/Pretendard-Bold.eot');
+    src: url('../css/font/Pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -13,10 +13,10 @@
 
 @font-face {
     font-family: 'Pretendard-SemiBold';
-    src: url('../font/pretendard/Pretendard-SemiBold.eot');
-    src: url('../font/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
-        url('../font/pretendard/Pretendard-SemiBold.woff') format('woff');
+    src: url('../css/font/Pretendard/Pretendard-SemiBold.eot');
+    src: url('../css/font/Pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -24,10 +24,10 @@
 
 @font-face {
     font-family: 'Pretendard-Regular';
-    src: url('../font/pretendard/Pretendard-Regular.eot');
-    src: url('../font/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/pretendard/Pretendard-Regular.woff2') format('woff2'),
-        url('../font/pretendard/Pretendard-Regular.woff') format('woff');
+    src: url('../css/font/Pretendard/Pretendard-Regular.eot');
+    src: url('../css/font/Pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -35,10 +35,10 @@
 
 @font-face {
     font-family: 'Pretendard-Medium';
-    src: url('../font/pretendard/Pretendard-Medium.eot');
-    src: url('../font/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/pretendard/Pretendard-Medium.woff2') format('woff2'),
-        url('../font/pretendard/Pretendard-Medium.woff') format('woff');
+    src: url('../css/font/Pretendard/Pretendard-Medium.eot');
+    src: url('../css/font/Pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -171,6 +171,7 @@ body{
 .section_3 .section_3_1 p{
     font-family: 'Pretendard-Regular';
     font-size: 36px;
+    color: #333333;
     margin-bottom: 39px;
     width: 1280px;
 }
@@ -178,6 +179,7 @@ body{
 .section_3 .section_3_1 p span{
     font-family: 'Pretendard-Bold';
     font-size: 36px;
+    color: #333333;
 }
 
 .section_3 .section_3_1 .item_wrap .left_box img{
@@ -224,9 +226,9 @@ body{
     line-height: 24px;
 }
 
-.section_3 .section_3_1 .item_wrap .right_box h3{
+.section_3 .section_3_1 .item_wrap .right_box p{
     color: #333333;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard-Medium';
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -249,30 +251,101 @@ body{
     font-size: 30px;
 }
 
-.section_4_1{
+.section_4 .section_4_1{
     width: 1280px;
-    margin: 0 auto;
-    padding: 100px 0;
-    box-sizing: border-box;
+    /* height: 746px; */
+    margin: 100px auto ;
+    /* padding: 100px 0;
+    box-sizing: border-box; */
 }
 
-.section_4_1 .top_line {
+.section_4 .section_4_1 .top_line {
     width: 1280px;
     height: 33px;
     line-height: 33px;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.section_4_1 .top_line .num{
+.section_4 .section_4_1 .top_line h2{
+    font-family: 'Pretendard-Bold';
+    font-size: 36px;
+    color: #333333;
+}
+
+.section_4 .section_4_1 .top_line .num{
+    width: calc(100% / 2);
     display: flex;
     justify-content: space-between;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
 
 }
 
+.section_4 .section_4_1 .top_line .num li:first-child{
+    font-family: 'Pretendard-Bold';
+}
 
+.section_4 .section_4_1 .list_box{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 194px;
+}
 
+.section_4 .section_4_1 .list_box .list_item{
+    width: 299px;
+    height: 100%;
+}
 
+.section_4 .section_4_1 .list_box .list_item img{
+    width: 299px;
+    height: 200px;
+    object-fit: cover;
+}
 
+.section_4 .section_4_1 .list_box .list_item .list_text{
+    margin-top: 20px;
+}
 
+.section_4 .section_4_1 .list_box .list_item .list_text h5{
+    font-family: 'Pretendard-SemiBold';
+    font-size: 20px;
+    color: #333333;
+    line-height: 1;
+}
 
+.section_4 .section_4_1 .list_box .list_item .list_text p{
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    color: #555555;
+    margin-top: 16px;
+} 
 
+.section_4 .section_4_1 .list_box .list_item .list_text .price{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.section_4 .section_4_1 .list_box .list_item .list_text .price strong{
+    font-family: 'Pretendard-Bold';
+    font-size: 20px;
+    color: #333333;
+}
+
+.section_4 .section_4_1 .list_box .list_item .list_text span{
+    background-color: #e6f2fb;
+    display: block;
+    width: 299px;
+    height: 40px;
+    text-align: left;
+    line-height: 40px;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    color: #555555;
+    margin-top: 20px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
